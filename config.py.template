@@ -1,0 +1,8 @@
+MQTTHOST = "mqtt"
+MQTTUSER = ""
+MQTTPASS = ""
+FLOOR = "EG"
+ROOM = "Wohnzimmer"
+DEVICE = "dev"
+INTERVAL = 20
+

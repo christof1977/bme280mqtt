@@ -1,0 +1,16 @@
+[Unit]
+Description=BME280 UDP Server
+After=network-online.target
+After=hzent.target
+[Service]
+Type=simple
+User=osmc
+Group=osmc
+UMask=007
+ExecStart=/opt/bme280mqtt/bme280mqtt.py
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target
