@@ -1,5 +1,5 @@
 [Unit]
-Description=BME280 UDP Server
+Description=BME280 MQTT Publisher
 After=network-online.target
 After=hzent.target
 [Service]
